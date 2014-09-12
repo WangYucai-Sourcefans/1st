@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "基础框架 (Foundation Framework)", "基础框架 (Foundation Framework)", "{5DE5B784-5FEF-4244-B8C1-43615C70B07F}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyInfoCommon.cs = AssemblyInfoCommon.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "企业管理套件 (Enterprise Suite)", "企业管理套件 (Enterprise Suite)", "{53151A49-00F4-4104-B08D-1DFD4C5B1CFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "单点登录 (SSO)", "单点登录 (SSO)", "{A8963CF3-A8D5-4CF9-BF05-B1C7A611EFA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "企业云盘 (Enterprise Cloud Storage)", "企业云盘 (Enterprise Cloud Storage)", "{47C1808F-2F21-470D-9C8C-302FCE2EA708}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "组织机构管理 (Organization Management)", "组织机构管理 (Organization Management)", "{BCE25084-F30A-4F31-B726-1391F5D8C6CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "管理工作台 (Management Console)", "管理工作台 (Management Console)", "{94EEEAB8-9987-453E-B360-411728AEB7A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "行为追踪 (Behavior Tracing)", "行为追踪 (Behavior Tracing)", "{6E75A56E-D7B9-41D8-9878-93E56DAA7EEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "源代码 (Source Coding)", "源代码 (Source Coding)", "{65A0A9B0-E56F-427C-A178-B21F302C4161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.Core", "Lib.Core\Lib.Core.csproj", "{C164947D-56FC-4AF1-AA4B-225B18805403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C164947D-56FC-4AF1-AA4B-225B18805403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C164947D-56FC-4AF1-AA4B-225B18805403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C164947D-56FC-4AF1-AA4B-225B18805403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C164947D-56FC-4AF1-AA4B-225B18805403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65A0A9B0-E56F-427C-A178-B21F302C4161} = {5DE5B784-5FEF-4244-B8C1-43615C70B07F}
+		{A8963CF3-A8D5-4CF9-BF05-B1C7A611EFA8} = {53151A49-00F4-4104-B08D-1DFD4C5B1CFD}
+		{BCE25084-F30A-4F31-B726-1391F5D8C6CB} = {53151A49-00F4-4104-B08D-1DFD4C5B1CFD}
+		{94EEEAB8-9987-453E-B360-411728AEB7A5} = {53151A49-00F4-4104-B08D-1DFD4C5B1CFD}
+		{6E75A56E-D7B9-41D8-9878-93E56DAA7EEF} = {53151A49-00F4-4104-B08D-1DFD4C5B1CFD}
+		{C164947D-56FC-4AF1-AA4B-225B18805403} = {65A0A9B0-E56F-427C-A178-B21F302C4161}
+	EndGlobalSection
+EndGlobal

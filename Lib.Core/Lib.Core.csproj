@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C164947D-56FC-4AF1-AA4B-225B18805403}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SourcefansStudio.FoundationFramework.Commons</RootNamespace>
+    <AssemblyName>FoundationFrameworks.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\FoundationFrameworks.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Lib Releases\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Lib Releases\FoundationFrameworks.Core.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Sn.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfoCommon.cs">
+      <Link>Properties\AssemblyInfoCommon.cs</Link>
+    </Compile>
+    <Compile Include="ApplicationRunMode.cs" />
+    <Compile Include="BaseCustomAttributeFinder.abstract.cs" />
+    <Compile Include="BaseException.public.cs" />
+    <Compile Include="BaseKeyValuePair.public.cs" />
+    <Compile Include="CastUtils.static.cs" />
+    <Compile Include="Collections\BaseDictionary.public.cs" />
+    <Compile Include="Collections\BaseList.public.cs" />
+    <Compile Include="Collections\ElementFunc.cs" />
+    <Compile Include="Collections\IBaseCollection.cs" />
+    <Compile Include="Collections\IBaseDictionary.cs" />
+    <Compile Include="Collections\IBaseList.cs" />
+    <Compile Include="Collections\KeyValuePairFunc.cs" />
+    <Compile Include="ComparisonUtils.static.cs" />
+    <Compile Include="ExceptionPreCodingAttribute.sealed.cs" />
+    <Compile Include="ExceptionPreCodingAttributeFinder.sealed.cs" />
+    <Compile Include="Generalization.public.cs" />
+    <Compile Include="ICustomAttributeFinder.cs" />
+    <Compile Include="IExceptionPreCoding.cs" />
+    <Compile Include="IGeneralization.cs" />
+    <Compile Include="IKeyValuePair.cs" />
+    <Compile Include="IOnlyGetUniqueIdentity.cs" />
+    <Compile Include="IPreCoding.cs" />
+    <Compile Include="IRealization.cs" />
+    <Compile Include="ITypeLoader.cs" />
+    <Compile Include="IUniqueIdentity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Realization.public.cs" />
+    <Compile Include="TUtils.static.cs" />
+    <Compile Include="TypeCustomAttributeFinder.public.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sn.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
