@@ -71,6 +71,11 @@
     <Compile Include="Realization.public.cs" />
     <Compile Include="TUtils.static.cs" />
     <Compile Include="TypeCustomAttributeFinder.public.cs" />
+    <Compile Include="Virtualizations\Gender.cs" />
+    <Compile Include="Virtualizations\IAppearanceProperty.cs" />
+    <Compile Include="Virtualizations\ILength.cs" />
+    <Compile Include="Virtualizations\IPersonInfo.cs" />
+    <Compile Include="Virtualizations\LengthUnits.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Sn.pfx" />
