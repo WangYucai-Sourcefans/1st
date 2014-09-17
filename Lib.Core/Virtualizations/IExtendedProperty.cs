@@ -80,6 +80,22 @@ namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
         /// <returns><see cref="EducationExperienceCollection"/>对象实例。</returns>
         EducationExperienceCollection GetEducationExperiences();
         #endregion
+
+        #region GetWorkExperiences
+        /// <summary>
+        /// 获取相关人的工作经历。
+        /// </summary>
+        /// <returns></returns>
+        WorkExperienceCollection GetWorkExperiences();
+        #endregion
+
+        #region GetPictureData
+        /// <summary>
+        /// 获取相关人的照片数据。
+        /// </summary>
+        /// <returns>实现了<see cref="IPictureData"/>接口的对象实例。</returns>
+        IPictureData GetPictureData();
+        #endregion
     }
 }
 

@@ -73,14 +73,33 @@
     <Compile Include="TypeCustomAttributeFinder.public.cs" />
     <Compile Include="Virtualizations\CertificateCollection.public.cs" />
     <Compile Include="Virtualizations\CertificateTypes.cs" />
+    <Compile Include="Virtualizations\ContactMethodCollection.public.cs" />
+    <Compile Include="Virtualizations\ContactMethods.cs" />
+    <Compile Include="Virtualizations\Education.cs" />
+    <Compile Include="Virtualizations\EducationExperienceCollection.public.cs" />
+    <Compile Include="Virtualizations\EducationStatus.cs" />
+    <Compile Include="Virtualizations\EnterpriseNature.cs" />
     <Compile Include="Virtualizations\Gender.cs" />
+    <Compile Include="Virtualizations\IAddressBook.cs" />
     <Compile Include="Virtualizations\IAppearanceProperty.cs" />
     <Compile Include="Virtualizations\ICertificate.cs" />
+    <Compile Include="Virtualizations\IContactMethod.cs" />
+    <Compile Include="Virtualizations\IEducationExperience.cs" />
+    <Compile Include="Virtualizations\IExtendedProperty.cs" />
+    <Compile Include="Virtualizations\IJobTitle.cs" />
     <Compile Include="Virtualizations\ILength.cs" />
+    <Compile Include="Virtualizations\IOrganization.cs" />
     <Compile Include="Virtualizations\IPersonInfo.cs" />
+    <Compile Include="Virtualizations\IPictureData.cs" />
+    <Compile Include="Virtualizations\IRegion.cs" />
     <Compile Include="Virtualizations\IWeight.cs" />
+    <Compile Include="Virtualizations\IWorkExperience.cs" />
     <Compile Include="Virtualizations\LengthUnits.cs" />
+    <Compile Include="Virtualizations\OrganizationCollection.public.cs" />
+    <Compile Include="Virtualizations\PersonCollection.public.cs" />
     <Compile Include="Virtualizations\WeightUnits.cs" />
+    <Compile Include="Virtualizations\WorkExperienceCollection.public.cs" />
+    <Compile Include="Virtualizations\WorkStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Sn.pfx" />
