@@ -1,17 +1,17 @@
-#region "ILength"
+#region "ICertificate"
 
 /*
  * ####     Developer Name : Wang Yucai
  * 
  * ####     Development Tool : Microsoft VisualStudio 2010 Ultimate Edition
  * 
- * ####     Create Time : 2014-09-12 17:03:57
+ * ####     Create Time : 2014-09-17 14:43:48
  * 
  * ####     Namespace : SourcefansStudio.FoundationFramework.Commons.Virtualizations
  * 
- * ####     Type Name : ILength
+ * ####     Type Name : ICertificate
  * 
- * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength
+ * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.ICertificate
  * 
  * ####     Machine Name : GLCHQWYCWINW7
  * 
@@ -28,28 +28,35 @@
 namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
 {
     /// <summary>
-    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength</para>
+    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.ICertificate</para>
     /// <para>
-    /// 定义了与长度相关的接口。
+    /// 定义了证件信息的接口。
     /// </para>
     /// </summary>
     /// <remarks>
     /// <para>Target Framework Version : 4.0</para>
     /// </remarks>
-    public interface ILength
+    public interface ICertificate
     {
-        #region Value
+        #region Type
         /// <summary>
-        /// 设置或获取长度值。
+        /// 设置或获取证件类型。
         /// </summary>
-        decimal Value { get; set; }
+        CertificateTypes Type { get; set; }
         #endregion
 
-        #region Unit
+        #region Name
         /// <summary>
-        /// 设置或获取长度单位。
+        /// 设置或获取证件类型。
         /// </summary>
-        LengthUnits Unit { get; set; }
+        string Name { get; set; }
+        #endregion
+
+        #region Number
+        /// <summary>
+        /// 设置或获取证件编号。
+        /// </summary>
+        string Number { get; set; }
         #endregion
     }
 }

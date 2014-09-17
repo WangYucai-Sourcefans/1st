@@ -1,17 +1,17 @@
-#region "ILength"
+#region "IContactMethod"
 
 /*
  * ####     Developer Name : Wang Yucai
  * 
  * ####     Development Tool : Microsoft VisualStudio 2010 Ultimate Edition
  * 
- * ####     Create Time : 2014-09-12 17:03:57
+ * ####     Create Time : 2014-09-17 15:00:07
  * 
  * ####     Namespace : SourcefansStudio.FoundationFramework.Commons.Virtualizations
  * 
- * ####     Type Name : ILength
+ * ####     Type Name : IContactMethod
  * 
- * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength
+ * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.IContactMethod
  * 
  * ####     Machine Name : GLCHQWYCWINW7
  * 
@@ -28,28 +28,35 @@
 namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
 {
     /// <summary>
-    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength</para>
+    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.IContactMethod</para>
     /// <para>
-    /// 定义了与长度相关的接口。
+    /// 定义了访问联系方式的接口。
     /// </para>
     /// </summary>
     /// <remarks>
     /// <para>Target Framework Version : 4.0</para>
     /// </remarks>
-    public interface ILength
+    public interface IContactMethod
     {
-        #region Value
+        #region Method
         /// <summary>
-        /// 设置或获取长度值。
+        /// 设置或获取常用的联系方式。
         /// </summary>
-        decimal Value { get; set; }
+        ContactMethods Method { get; set; }
         #endregion
 
-        #region Unit
+        #region Description
         /// <summary>
-        /// 设置或获取长度单位。
+        /// 设置或获取联系方式的描述信息。
         /// </summary>
-        LengthUnits Unit { get; set; }
+        string Description { get; set; }
+        #endregion
+
+        #region Value
+        /// <summary>
+        /// 设置或获取具体的联系方式。
+        /// </summary>
+        string Value { get; set; }
         #endregion
     }
 }

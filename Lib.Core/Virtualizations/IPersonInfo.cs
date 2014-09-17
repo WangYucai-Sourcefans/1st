@@ -87,6 +87,27 @@ namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
         /// </summary>
         Gender Gender { get; set; }
         #endregion
+
+        #region ExtendedProperties
+        /// <summary>
+        /// 设置或获取与此人相关的扩展信息。
+        /// </summary>
+        IExtendedProperty ExtendedProperties { get; set; }
+        #endregion
+
+        #region BirthRegion
+        /// <summary>
+        /// 设置或获取出生地信息。
+        /// </summary>
+        IRegion BirthRegion { get; set; }
+        #endregion
+
+        #region Nationality
+        /// <summary>
+        /// 设置或获取国籍。
+        /// </summary>
+        IRegion Nationality { get; set; }
+        #endregion
     }
 }
 

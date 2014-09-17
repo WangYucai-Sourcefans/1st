@@ -1,17 +1,17 @@
-#region "ILength"
+#region "IJobTitle"
 
 /*
  * ####     Developer Name : Wang Yucai
  * 
  * ####     Development Tool : Microsoft VisualStudio 2010 Ultimate Edition
  * 
- * ####     Create Time : 2014-09-12 17:03:57
+ * ####     Create Time : 2014-09-17 15:38:55
  * 
  * ####     Namespace : SourcefansStudio.FoundationFramework.Commons.Virtualizations
  * 
- * ####     Type Name : ILength
+ * ####     Type Name : IJobTitle
  * 
- * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength
+ * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.IJobTitle
  * 
  * ####     Machine Name : GLCHQWYCWINW7
  * 
@@ -28,28 +28,28 @@
 namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
 {
     /// <summary>
-    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.ILength</para>
+    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.IJobTitle</para>
     /// <para>
-    /// 定义了与长度相关的接口。
+    /// 定义了职位相关的信息接口。
     /// </para>
     /// </summary>
     /// <remarks>
     /// <para>Target Framework Version : 4.0</para>
     /// </remarks>
-    public interface ILength
+    public interface IJobTitle
     {
-        #region Value
+        #region Name
         /// <summary>
-        /// 设置或获取长度值。
+        /// 设置或获取职位名称。
         /// </summary>
-        decimal Value { get; set; }
+        string Name { get; set; }
         #endregion
 
-        #region Unit
+        #region Organization
         /// <summary>
-        /// 设置或获取长度单位。
+        /// 设置或获取职位所属的组织。
         /// </summary>
-        LengthUnits Unit { get; set; }
+        IOrganization Organization { get; set; }
         #endregion
     }
 }
