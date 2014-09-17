@@ -1,17 +1,17 @@
-#region "IAppearanceProperty"
+#region "WeightUnits"
 
 /*
  * ####     Developer Name : Wang Yucai
  * 
  * ####     Development Tool : Microsoft VisualStudio 2010 Ultimate Edition
  * 
- * ####     Create Time : 2014-09-12 16:55:35
+ * ####     Create Time : 2014-09-17 14:24:20
  * 
  * ####     Namespace : SourcefansStudio.FoundationFramework.Commons.Virtualizations
  * 
- * ####     Type Name : IAppearanceProperty
+ * ####     Type Name : WeightUnits
  * 
- * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.IAppearanceProperty
+ * ####     Full Name : SourcefansStudio.FoundationFramework.Commons.Virtualizations.WeightUnits
  * 
  * ####     Machine Name : GLCHQWYCWINW7
  * 
@@ -29,29 +29,29 @@ using System;
 namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
 {
     /// <summary>
-    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.IAppearanceProperty</para>
+    /// <para>SourcefansStudio.FoundationFramework.Commons.Virtualizations.WeightUnits</para>
     /// <para>
-    /// 定义了与人类外表属性相关的接口。
+    /// 定义了常用的质量单位枚举。
     /// </para>
     /// </summary>
     /// <remarks>
     /// <para>Target Framework Version : 4.0</para>
     /// </remarks>
-    public interface IAppearanceProperty
+    [Serializable()]
+    public enum WeightUnits
     {
-        #region Height
         /// <summary>
-        /// 设置或获取身高值。
+        /// 克。
         /// </summary>
-        ILength Height { get; set; }
-        #endregion
-
-        #region Weight
+        Gram = 'G',
         /// <summary>
-        /// 设置或获取重量值。
+        /// 千克。
         /// </summary>
-        IWeight Weight { get; set; }
-        #endregion
+        Kilogram = 'K',
+        /// <summary>
+        /// 吨。
+        /// </summary>
+        Ton = 'T'
     }
 }
 

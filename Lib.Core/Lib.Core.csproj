@@ -75,7 +75,9 @@
     <Compile Include="Virtualizations\IAppearanceProperty.cs" />
     <Compile Include="Virtualizations\ILength.cs" />
     <Compile Include="Virtualizations\IPersonInfo.cs" />
+    <Compile Include="Virtualizations\IWeight.cs" />
     <Compile Include="Virtualizations\LengthUnits.cs" />
+    <Compile Include="Virtualizations\WeightUnits.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Sn.pfx" />

@@ -73,6 +73,20 @@ namespace SourcefansStudio.FoundationFramework.Commons.Virtualizations
         /// </summary>
         DateTime BirthDate { get; set; }
         #endregion
+
+        #region Appearance
+        /// <summary>
+        /// 设置或获取与人类外在属性相关的信息。
+        /// </summary>
+        IAppearanceProperty Appearance { get; set; }
+        #endregion
+
+        #region Gender
+        /// <summary>
+        /// 设置或获取性别属性。
+        /// </summary>
+        Gender Gender { get; set; }
+        #endregion
     }
 }
 
