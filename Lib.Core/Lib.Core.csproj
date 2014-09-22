@@ -69,6 +69,7 @@
     <Compile Include="IUniqueIdentity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Realization.public.cs" />
+    <Compile Include="StringParser.static.cs" />
     <Compile Include="TUtils.static.cs" />
     <Compile Include="TypeCustomAttributeFinder.public.cs" />
     <Compile Include="Virtualizations\CertificateCollection.public.cs" />
