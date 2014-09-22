@@ -58,6 +58,7 @@
     <Compile Include="ExceptionPreCodingAttribute.sealed.cs" />
     <Compile Include="ExceptionPreCodingAttributeFinder.sealed.cs" />
     <Compile Include="Generalization.public.cs" />
+    <Compile Include="IAppDomainExtender.cs" />
     <Compile Include="ICustomAttributeFinder.cs" />
     <Compile Include="IExceptionPreCoding.cs" />
     <Compile Include="IGeneralization.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="IUniqueIdentity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Realization.public.cs" />
+    <Compile Include="Reflection\AssemblyFileInfo.public.cs" />
+    <Compile Include="Reflection\IAssemblyFileInfo.cs" />
     <Compile Include="StringParser.static.cs" />
     <Compile Include="TUtils.static.cs" />
     <Compile Include="TypeCustomAttributeFinder.public.cs" />
