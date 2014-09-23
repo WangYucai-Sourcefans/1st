@@ -42,6 +42,7 @@
     <Compile Include="..\AssemblyInfoCommon.cs">
       <Link>Properties\AssemblyInfoCommon.cs</Link>
     </Compile>
+    <Compile Include="AppDomainExtender.public.cs" />
     <Compile Include="ApplicationRunMode.cs" />
     <Compile Include="BaseCustomAttributeFinder.abstract.cs" />
     <Compile Include="BaseException.public.cs" />

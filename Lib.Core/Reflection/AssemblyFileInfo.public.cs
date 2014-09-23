@@ -28,6 +28,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Diagnostics;
+using System.Threading;
 
 namespace SourcefansStudio.FoundationFramework.Commons.Reflection
 {
@@ -176,7 +177,40 @@ namespace SourcefansStudio.FoundationFramework.Commons.Reflection
         public virtual Assembly Load(bool loadDependencies)
         {
             this.RaiseException();
-            
+            if (loadDependencies) return Assembly.LoadFrom(this.FullName);
+            else return Assembly.LoadFile(this.FullName);
+        }
+        #endregion
+
+        #region NonExclusiveLoad
+        /// <summary>
+        /// 非独占的加载程序集。
+        /// </summary>
+        /// <returns><see cref="Assembly"/>对象实例。</returns>
+        public virtual Assembly NonExclusiveLoad()
+        {
+            this.RaiseException();
+            using (ReaderWriterLockSlim readLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion))
+            {
+                readLock.EnterReadLock();
+                using (FileStream assemblyFileStream = new FileStream(this.FullName, FileMode.Open, FileAccess.Read))
+                {
+                    Assembly resultAss = null;
+                    try
+                    {
+                        byte[] fileData = new byte[assemblyFileStream.Length];
+                        assemblyFileStream.Read(fileData, 0, fileData.Length);
+                        resultAss = Assembly.Load(fileData);
+                    }
+                    catch (Exception ex) { throw ex; }
+                    finally
+                    {
+                        assemblyFileStream.Close();
+                        readLock.ExitReadLock();
+                    }
+                    return resultAss;
+                }
+            }
         }
         #endregion
     }
