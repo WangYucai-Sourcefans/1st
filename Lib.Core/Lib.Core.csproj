@@ -56,6 +56,7 @@
     <Compile Include="Collections\IBaseList.cs" />
     <Compile Include="Collections\KeyValuePairFunc.cs" />
     <Compile Include="ComparisonUtils.static.cs" />
+    <Compile Include="Editions.cs" />
     <Compile Include="ExceptionPreCodingAttribute.sealed.cs" />
     <Compile Include="ExceptionPreCodingAttributeFinder.sealed.cs" />
     <Compile Include="Generalization.public.cs" />
@@ -93,15 +94,19 @@
     <Compile Include="Virtualizations\IExtendedProperty.cs" />
     <Compile Include="Virtualizations\IJobTitle.cs" />
     <Compile Include="Virtualizations\ILength.cs" />
+    <Compile Include="Virtualizations\IManufacturer.cs" />
     <Compile Include="Virtualizations\IOrganization.cs" />
     <Compile Include="Virtualizations\IPersonInfo.cs" />
     <Compile Include="Virtualizations\IPictureData.cs" />
     <Compile Include="Virtualizations\IRegion.cs" />
+    <Compile Include="Virtualizations\ISerialNumber.cs" />
     <Compile Include="Virtualizations\IWeight.cs" />
     <Compile Include="Virtualizations\IWorkExperience.cs" />
     <Compile Include="Virtualizations\LengthUnits.cs" />
+    <Compile Include="Virtualizations\Manufacturer.public.cs" />
     <Compile Include="Virtualizations\OrganizationCollection.public.cs" />
     <Compile Include="Virtualizations\PersonCollection.public.cs" />
+    <Compile Include="Virtualizations\SerialNumber.public.cs" />
     <Compile Include="Virtualizations\WeightUnits.cs" />
     <Compile Include="Virtualizations\WorkExperienceCollection.public.cs" />
     <Compile Include="Virtualizations\WorkStatus.cs" />
