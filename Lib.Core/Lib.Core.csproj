@@ -57,11 +57,13 @@
     <Compile Include="Collections\KeyValuePairFunc.cs" />
     <Compile Include="ComparisonUtils.static.cs" />
     <Compile Include="Editions.cs" />
+    <Compile Include="EnvironmentVariable.public.cs" />
     <Compile Include="ExceptionPreCodingAttribute.sealed.cs" />
     <Compile Include="ExceptionPreCodingAttributeFinder.sealed.cs" />
     <Compile Include="Generalization.public.cs" />
     <Compile Include="IAppDomainExtender.cs" />
     <Compile Include="ICustomAttributeFinder.cs" />
+    <Compile Include="IEnvironmentVariable.cs" />
     <Compile Include="IExceptionPreCoding.cs" />
     <Compile Include="IGeneralization.cs" />
     <Compile Include="IKeyValuePair.cs" />
