@@ -1,0 +1,8 @@
+﻿Sourcefans Studio OpenSource Toolkits : VersionCreator
+Command Description
+	/c [major version num] [minor version num]
+	example :
+		input :    /c 1 0
+		output :    1.0.45645.464546546
+======================================
+Enter your major & minor
