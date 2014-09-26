@@ -48,7 +48,7 @@ namespace SourcefansStudio.FoundationFramework.Commons
         /// <typeparamref name="TCsharp"/>类型必须包含Parse静态方法，且此方法必须提供一个以字符串类型的参数。
         /// </typeparam>
         /// <param name="s">字符串。</param>
-        /// <returns><see cref="TCsharp"/>类型值。</returns>
+        /// <returns><typeparamref name="TCsharp"/>类型值。</returns>
         /// <exception cref="NullReferenceException">当<paramref name="s"/>为null、Empty、或空白符时抛出此异常。</exception>
         /// <exception cref="AmbiguousMatchException">
         /// 当<typeparamref name="TCsharp"/>类型未提供匹配的静态方法时；或者参数类型个数等条件不匹配时，抛出此异常。
