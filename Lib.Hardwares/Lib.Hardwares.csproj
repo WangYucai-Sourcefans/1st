@@ -47,9 +47,11 @@
       <Link>Properties\AssemblyInfoCommon.cs</Link>
     </Compile>
     <Compile Include="IMotherBoard.cs" />
+    <Compile Include="IMotherBoardWMI.cs" />
     <Compile Include="INetworkAdapter.cs" />
     <Compile Include="INetworkAdapterWMI.cs" />
     <Compile Include="IWMI.cs" />
+    <Compile Include="MotherBoard.public.cs" />
     <Compile Include="MotherBoardCollection.sealed.cs" />
     <Compile Include="NetworkAdapter.public.cs" />
     <Compile Include="NetworkAdapterCollection.sealed.cs" />
